@@ -1,0 +1,46 @@
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="VehicleType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FUEL_CAR"/>
+            <xs:enumeration value="ELECTRO_CAR"/>
+            <xs:enumeration value="BUS"/>
+            <xs:enumeration value="MINIBUS"/>
+            <xs:enumeration value="HOUSE_ON_WHEELS"/>
+            <xs:enumeration value="TRAILER"/>
+            <xs:enumeration value="BICYCLE"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CarBodyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="HATCHBACK"/>
+            <xs:enumeration value="SEDAN"/>
+            <xs:enumeration value="STATION_WAGON"/>
+            <xs:enumeration value="WAGON"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="xmlBus">
+        <xs:sequence>
+            <xs:element type="xs:string" name="id"/>
+            <xs:element type="VehicleType" name="vehicleType"/>
+            <xs:element type="xs:string" name="model"/>
+            <xs:element type="xs:int" name="yearOfManufacture"/>
+            <xs:element type="xs:int" name="enginePower"/>
+            <xs:element type="CarBodyType" name="carBodyType"/>
+            <xs:element type="xs:int" name="engineCapacity"/>
+            <xs:element type="xs:int" name="numberOfAxles"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="data">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="item" maxOccurs="unbounded" minOccurs="0" type="xmlBus">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

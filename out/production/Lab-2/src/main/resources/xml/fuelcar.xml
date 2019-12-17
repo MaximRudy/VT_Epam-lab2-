@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xmlFuelCar">
+        <id>1</id>
+        <vehicleType>FUEL_CAR</vehicleType>
+        <model>fuel-car1</model>
+        <yearOfManufacture>2012</yearOfManufacture>
+        <enginePower>300</enginePower>
+        <carBodyType>HATCHBACK</carBodyType>
+        <engineCapacity>5</engineCapacity>
+    </item>
+</data>

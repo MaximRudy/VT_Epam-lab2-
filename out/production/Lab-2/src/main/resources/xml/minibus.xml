@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xmlMinibus">
+        <id>1</id>
+        <vehicleType>MINIBUS</vehicleType>
+        <model>minibus1</model>
+        <yearOfManufacture>2008</yearOfManufacture>
+        <enginePower>500</enginePower>
+        <carBodyType>WAGON</carBodyType>
+        <engineCapacity>6</engineCapacity>
+    </item>
+</data>

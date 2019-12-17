@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xmlHouseOnWheels">
+        <id>1</id>
+        <vehicleType>HOUSE_ON_WHEELS</vehicleType>
+        <model>house-on-wheels1</model>
+        <yearOfManufacture>2016</yearOfManufacture>
+        <enginePower>600</enginePower>
+        <carBodyType>WAGON</carBodyType>
+        <engineCapacity>8</engineCapacity>
+        <isKitchenPresent>true</isKitchenPresent>
+    </item>
+</data>

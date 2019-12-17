@@ -1,0 +1,5 @@
+{"FuelCar":{"id":"1","vehicleType":"FUEL_CAR","model":"Mercedes","yearOfManufacture":2007,"enginePower":240,"carBodyType":"SEDAN","engineCapacity":2}}
+{"FuelCar":{"id":"2","vehicleType":"FUEL_CAR","model":"BMW","yearOfManufacture":2012,"enginePower":260,"carBodyType":"SEDAN","engineCapacity":2}}
+{"FuelCar":{"id":"3","vehicleType":"FUEL_CAR","model":"Mercedes","yearOfManufacture":2001,"enginePower":180,"carBodyType":"HATCHBACK","engineCapacity":2}}
+{"FuelCar":{"id":"4","vehicleType":"FUEL_CAR","model":"Lexus","yearOfManufacture":2019,"enginePower":320,"carBodyType":"SEDAN","engineCapacity":3}}
+{"Bus":{"id":"5","vehicleType":"BUS","model":"MAZ","yearOfManufacture":1999,"enginePower":460,"carBodyType":"WAGON","engineCapacity":5,"numberOfAxles":3}}

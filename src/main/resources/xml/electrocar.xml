@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xmlElectroCar">
+        <id>1</id>
+        <vehicleType>ELECTRO_CAR</vehicleType>
+        <model>electro-car1</model>
+        <yearOfManufacture>2015</yearOfManufacture>
+        <enginePower>200</enginePower>
+        <carBodyType>SEDAN</carBodyType>
+        <timeToCharge>3</timeToCharge>
+    </item>
+</data>

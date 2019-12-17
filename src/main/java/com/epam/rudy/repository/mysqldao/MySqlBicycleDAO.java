@@ -1,0 +1,47 @@
+package com.epam.rudy.repository.mysqldao;
+
+import com.epam.rudy.entity.Bicycle;
+import com.epam.rudy.entity.VehicleType;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.List;
+
+public class MySqlBicycleDAO extends MySqlDAO<Bicycle> {
+
+	public MySqlBicycleDAO(String url, String login, String password) {
+		super(url, login, password);
+	}
+
+	@Override
+	public String getTableName() {
+		return "bicycle";
+	}
+
+	@Override
+	public List<String> getFields() {
+		return Arrays.asList("id", "vehicleType", "model", "yearOfManufacture", "isIndependentVehicle");
+	}
+
+	@Override
+	void fillPreparedStatement(PreparedStatement preparedStatement, Bicycle object) throws SQLException {
+		preparedStatement.setString(1, object.getId());
+		preparedStatement.setString(2, object.getVehicleType().name());
+		preparedStatement.setString(3, object.getModel());
+		preparedStatement.setInt(4, object.getYearOfManufacture());
+		preparedStatement.setBoolean(5, object.isIndependentVehicle());
+	}
+
+	@Override
+	Bicycle toObject(ResultSet resultSet) throws SQLException {
+		return new Bicycle(
+				resultSet.getString(1),
+				VehicleType.valueOf(resultSet.getString(2)),
+				resultSet.getString(3),
+				resultSet.getInt(4),
+				resultSet.getBoolean(5)
+		);
+	}
+}
